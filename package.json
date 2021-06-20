@@ -1,14 +1,18 @@
 {
-  "name": "cachewrapper",
+  "name": "cachewrap",
   "version": "0.0.1",
   "description": "cache the return of a function",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "keywords": [
     "cache"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jakobrosenberg/cachewrap.git"
+  },
   "author": "jakobrosenberg@gmail.com",
   "license": "MIT",
   "prettier": {

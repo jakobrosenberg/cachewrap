@@ -10,7 +10,7 @@ const _idGenerator = params => params.map(param => param.toString()).join('-')
 /**
  * @param {IdGenerator} defaultIdGenerator 
  */
-const createCacheWrapper = (defaultIdGenerator = _idGenerator) => {
+const createCacheWrap = (defaultIdGenerator = _idGenerator) => {
     const cache = new Map()
 
     /**
@@ -19,7 +19,7 @@ const createCacheWrapper = (defaultIdGenerator = _idGenerator) => {
      * @param {IdGenerator} idGenerator
      * @returns {T & {refresh: T}}
      */
-    const cacheWrapper = (fn, idGenerator = defaultIdGenerator) => {
+    const cacheWrap = (fn, idGenerator = defaultIdGenerator) => {
         const wrapped = (...params) => {
             const id = idGenerator(params)
             if (!cache.has(id)) {
@@ -46,7 +46,7 @@ const createCacheWrapper = (defaultIdGenerator = _idGenerator) => {
         return wrapped
     }
 
-    return cacheWrapper
+    return cacheWrap
 }
 
-module.exports = createCacheWrapper
+module.exports = createCacheWrap

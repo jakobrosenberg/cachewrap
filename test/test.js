@@ -1,11 +1,11 @@
 const assert = require('assert')
-const createCacheWrapper = require('../index')
+const createCacheWrap = require('../index')
 
 let count = 0
 
-const cacheWrapper = createCacheWrapper()
+const cacheWrap = createCacheWrap()
 const iterator = name => name + (count++).toString()
-const cachedIterator = cacheWrapper(iterator)
+const cachedIterator = cacheWrap(iterator)
 
 
 // iterator should bump `count`
