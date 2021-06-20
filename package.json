@@ -1,0 +1,29 @@
+{
+  "name": "cachewrapper",
+  "version": "0.0.1",
+  "description": "cache the return of a function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "jakobrosenberg@gmail.com",
+  "license": "MIT",
+  "prettier": {
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "semi": false,
+    "useTabs": false,
+    "tabWidth": 4,
+    "printWidth": 90,
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "svelteAllowShorthand": true,
+    "svelteBracketNewLine": false,
+    "svelteIndentScriptAndStyle": true
+  }
+}
